@@ -1,0 +1,43 @@
+.layout 
+  h1, h2{
+    text-decoration: underline;
+    font-family:Arial, Helvetica, sans-serif
+  }
+  
+  header { 
+    grid-area: header;
+    font-size: 30px;
+    color:rgb(26, 118, 210);
+    background-color: #b6f40a;
+    text-align: center; 
+    line-height: 150px;
+  }
+  img {
+    width: 400px;
+    height: auto;
+    max-height: 300px;
+    filter: brightness(105%) contrast(110%) saturate(120%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+ 
+  
+  #small{
+      font-size: 200%;
+  }
+  
+  body{
+      background-image: linear-gradient(#da76eb, #250d0d);
+      color: rgb(236, 233, 232);
+  }
+  
+
+
+
+  
+  
+  
+  
+  
+  

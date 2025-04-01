@@ -1,0 +1,20 @@
+/* Center the video container */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Style for the video container */
+.video-container {
+  text-align: center;
+}
+
+video {
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}

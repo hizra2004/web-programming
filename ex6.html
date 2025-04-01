@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol Cost Calculator</title>
+    <link rel="stylesheet" href="ex6.css"> <!-- Linking external CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Petrol Cost Calculator</h1>
+        
+        <!-- Cost per liter input -->
+        <label for="cost">Cost per Liter (£):</label>
+        <input type="number" id="cost" value="1.72" step="0.01" disabled>
+
+        <!-- Liters purchased input -->
+        <label for="liters">Liters Purchased:</label>
+        <input type="number" id="liters" value="0" step="0.1">
+
+        <!-- Static total cost display -->
+        <p class="note">* Enter the values and calculate manually.</p>
+        <p id="total-cost">Total Cost: £ _______ </p>
+        // Function to calculate total petrol cost
+        <script>
+            function calculateTotalCost() {
+                const costPerLiter = parseFloat(document.getElementById('cost').value);
+                const litersPurchased = parseFloat(document.getElementById('liters').value);
+                const totalCost = (costPerLiter * litersPurchased).toFixed(2);
+                document.getElementById('total-cost').innerText = `Total Cost: £ ${totalCost}`;
+            }
+
+            // Event listener for input change
+            document.getElementById('liters').addEventListener('input', calculateTotalCost);
+
+        </script>
+        </div>
+    </body>
+    </html>
